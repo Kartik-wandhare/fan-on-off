@@ -6,6 +6,9 @@
     <title>fan-on-off</title>
 </head>
 <style>
+    .body{
+        background-color:#FBFFE4;
+    }
 .container{
     display: block;
     margin: 50px auto;
@@ -13,9 +16,11 @@
     width: 390px;
     border: 1px solid black;
     border-radius: 25px;
+    background-color: #B3D8A8;
 }
 .heading{
     text-align: center;
+    color: #3D8D7A;
 }
 .img{
     display: block;
@@ -34,14 +39,18 @@
     font-size: 30px;
     padding: 5px;
 }
+.color{
+    background-color: #A3D1C6;
+    color: #3D8D7A;
+}
 </style>
-<body>
+<body class="body">
     <div class="container">
         <h1 class="heading">Fan-On-Off</h1>
       <img src="fan-off.png" class="img" id="img">
       <div class="button-container">
-      <button class="btn" onclick="off()">Off</button>
-      <button class="btn" onclick="on()">On</button>
+      <button class="btn   color"    onclick="off()">Off</button>
+      <button class="btn   color" onclick="on()">On</button>
     </div>
     </div>
     <script>
