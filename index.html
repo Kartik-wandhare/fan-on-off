@@ -23,11 +23,26 @@
     height: 300px;
     width: 250px;
 }
+.button-container{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+   width: 30%;
+   border-radius: 25px;
+    margin: 50px 0px 0px 0px;
+    font-size: 30px;
+    padding: 5px;
+}
 </style>
 <body>
     <div class="container">
         <h1 class="heading">Fan-On-Off</h1>
-      <img src="fan- off.png" class="img">
+      <img src="fan- off.png" class="img" id="img">
+      <div class="button-container">
+      <button class="btn" onclick="off()">Off</button>
+      <button class="btn" onclick="on()">On</button>
+    </div>
     </div>
 </body>
 </html>
