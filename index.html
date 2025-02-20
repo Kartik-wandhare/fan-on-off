@@ -38,11 +38,20 @@
 <body>
     <div class="container">
         <h1 class="heading">Fan-On-Off</h1>
-      <img src="fan- off.png" class="img" id="img">
+      <img src="fan-off.png" class="img" id="img">
       <div class="button-container">
       <button class="btn" onclick="off()">Off</button>
       <button class="btn" onclick="on()">On</button>
     </div>
     </div>
+    <script>
+        const imgElement= document.getElementById("img");
+        function on(){
+       imgElement.src="fan-on.png";
+        }
+        function off(){
+       imgElement.src="fan-off.png";
+        }
+    </script>
 </body>
 </html>
